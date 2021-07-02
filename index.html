@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+    <nav class=" navbar navbar-expand-lg navbar-dark bg-success">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">MY-Notes</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                </ul>
+                <form class="d-flex mt-3">
+                    <input class="form-control me-2" type="search" id="search-text" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <div class="add-notes-box mt-5">
+            <div class=" w-100">
+                
+                <div class="card-body">
+                    <div class="mb-3">
+                        <label for="add-title " style="font-size:1.5rem;margin-bottom:.4rem"><b>Add title</b></label>
+                        <textarea id="add-title" class="form-control" rows="1" placeholder="Write Title for notes...."></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="add-text" style="font-size:1.5rem;margin-bottom:.4rem"><b>Add Notes</b></label>
+                        <textarea id="add-text" class="form-control" rows="5" placeholder="Write your nores here...."></textarea>
+                    </div>
+                    
+                    <button id="add-btn" class=" btn btn-success outline-none">Add</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="show-notes-box mt-5">
+            <div class="card  w-100 p-3">
+                <h2 class="px-4 mb-4 ">Your Notes</h2>
+                <div id="all-notes" class="row  row-cols-1 row-cols-md-3 g-4">
+                    
+                    
+                  </div>
+            </div>
+        </div>
+    </div>
+   
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

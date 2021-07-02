@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: rgb(235, 243, 230);
+    font-family: 'Montserrat', sans-serif
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat&family=Open+Sans&family=Playfair+Display&family=Raleway&family=Roboto&display=swap');
+/* font-family: 'Abril Fatface', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif; */
+@media (max-width: 768px){
+    nav.navbar{
+        padding: 1rem 0;
+    }
+}
+a.navbar-brand{
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 2px;
+    font-weight: bold;
+    transition:all 0.5s ease-in-out;
+}
+a.navbar-brand:hover{
+    color: blue !important;
+}
+textarea{
+    resize:none;
+    /* width: 100px;
+    height:400px ; */
+}
+
+#add-btn{
+    padding: 0.5rem 2rem;
+    text-transform: uppercase;
+}
+.show-notes-box .card{
+    background-color:rgb(235, 250, 226);    
+}
+.all-notes .card-body{
+    background-color: red !important;
+   
+}
